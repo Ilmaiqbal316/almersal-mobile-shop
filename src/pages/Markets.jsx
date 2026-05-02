@@ -54,12 +54,12 @@ export default function Markets() {
       </section>
 
       {/* Map visualization */}
-      <section className="py-24">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle label="Our Markets" title="Export Destinations" subtitle="Reliable supply chains connecting Dubai to key African markets" />
           
           {/* Animated route */}
-          <div className="flex items-center justify-center gap-4 sm:gap-8 mb-16">
+          <div className="flex items-center justify-center gap-4 sm:gap-8 mb-10">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -105,7 +105,7 @@ export default function Markets() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {countries.map((country, i) => (
               <AnimatedSection key={country.name} delay={i * 0.1}>
                 <GlassCard hover3D className="h-full text-center">
@@ -127,13 +127,13 @@ export default function Markets() {
       </section>
 
       {/* Logistics with imagery */}
-      <section className="py-24 relative">
+      <section className="py-5 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/[0.02] to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle label="Logistics" title="Delivery Excellence" subtitle="End-to-end logistics solutions for wholesale mobile trading" />
 
           {/* Big split image + cards layout */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-10">
+          <div className="grid lg:grid-cols-2 gap-8 mb-8">
             {/* Left — warehouse image */}
             <AnimatedSection>
               <div className="relative rounded-xl overflow-hidden h-full" style={{ maxHeight: '380px' }}>
@@ -214,7 +214,7 @@ export default function Markets() {
       </section>
 
       {/* Stats */}
-      <section className="py-24">
+      <section className="py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
             <AnimatedCounter target={6} label="Countries" />

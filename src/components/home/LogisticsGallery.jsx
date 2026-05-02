@@ -39,7 +39,7 @@ export default function LogisticsGallery() {
   const [hoveredIndex, setHoveredIndex] = useState(/** @type {number | null} */ (null));
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/[0.02] to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +49,7 @@ export default function LogisticsGallery() {
           subtitle="From Dubai warehouses to your doorstep — precision handling at every step"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
           {logisticsImages.map((item, i) => {
             const Icon = item.icon;
             const isHovered = hoveredIndex === i;

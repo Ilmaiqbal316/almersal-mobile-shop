@@ -22,8 +22,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '+971 56 568 8566',
-    href: 'tel:+971565688566',
+    value: '+971 52 322 2928',
+    href: 'tel:+971523222928',
   },
   {
     icon: Mail,

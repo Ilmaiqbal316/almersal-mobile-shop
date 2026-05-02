@@ -40,7 +40,7 @@ export default function About() {
   return (
     <div className="pt-20">
       {/* Hero banner */}
-      <section className="relative py-24 sm:py-32 overflow-hidden">
+      <section className="relative py-16 sm:py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img src={DUBAI_IMG} alt="Dubai Skyline" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-b from-navy-deep via-navy-deep/80 to-navy-deep" />
@@ -63,11 +63,11 @@ export default function About() {
       </section>
 
       {/* Main content */}
-      <section className="py-24">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <AnimatedSection>
-              <h2 className="text-3xl sm:text-4xl font-bold gold-gradient-text mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold gold-gradient-text mb-6">
                 Who We Are
               </h2>
               <div className="space-y-6 text-black/60 leading-relaxed text-lg">
@@ -114,7 +114,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-24 relative">
+      <section className="py-12 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/[0.02] to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle label="Our Values" title="What Drives Us" />
@@ -135,10 +135,10 @@ export default function About() {
       </section>
 
       {/* Operations imagery strip */}
-      <section className="py-16 relative overflow-hidden">
+      <section className="py-10 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="mb-10 text-center">
+            <div className="mb-6 text-center">
               <span className="text-gold font-mono text-xs tracking-[0.3em] uppercase mb-3 block">Our Operations</span>
               <h2 className="text-2xl sm:text-3xl font-bold gold-gradient-text">
                 From Warehouse to Worldwide
@@ -202,7 +202,7 @@ export default function About() {
       </section>
 
       {/* Stats */}
-      <section className="py-24">
+      <section className="py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
             <AnimatedCounter target={9} suffix="+" label="Brands" />

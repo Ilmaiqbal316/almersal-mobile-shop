@@ -16,7 +16,7 @@ const countries = [
 
 export default function ExportPreview() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-14 relative overflow-hidden">
       {/* Subtle logistics background */}
       <div className="absolute inset-0 pointer-events-none">
         <img
@@ -36,7 +36,7 @@ export default function ExportPreview() {
         />
 
         {/* Countries */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
           {countries.map((country, i) => (
             <AnimatedSection key={country.name} delay={i * 0.1}>
               <motion.div

@@ -27,7 +27,7 @@ export default function HeroSection() {
         ))}
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 w-full">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-14 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text content — always first on mobile */}
           <div className="order-1">
