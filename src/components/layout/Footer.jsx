@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-gold/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gold-light/60 text-xs font-mono tracking-wider">
-            © 2024 ALMERSAL ALSAREE ELECTRONIS TRADING L.L.C. All Rights Reserved.
+            © {new Date().getFullYear()} ALMERSAL ALSAREE ELECTRONIS TRADING L.L.C. All Rights Reserved.
           </p>
           <p className="text-gold-light/60 text-xs font-mono tracking-wider">
             Dubai, United Arab Emirates

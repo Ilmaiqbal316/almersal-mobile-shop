@@ -1,6 +1,7 @@
 import { Toaster as SonnerToaster } from "sonner"
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import MainLayout from './components/layout/MainLayout';
 import Home from './pages/Home';
@@ -11,10 +12,19 @@ import Contact from './pages/Contact';
 
 const queryClient = new QueryClient();
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
