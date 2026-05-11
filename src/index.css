@@ -92,14 +92,15 @@
 
 /* Custom scrollbar - Light Theme */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background: #F5F5F5;
 }
 ::-webkit-scrollbar-thumb {
   background: #FFD700;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #DAA520;

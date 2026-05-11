@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Send, Clock, ArrowRight, CheckCircle, AlertCircle } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import AnimatedSection from '../components/shared/AnimatedSection';
 
@@ -59,6 +60,23 @@ export default function Contact() {
   const [status, setStatus] = useState(/** @type {Status} */ ('idle'));
   const [focused, setFocused] = useState('');
 
+  const { hash } = useLocation();
+
+  // Scroll to the inquiry form when navigated via #inquiry-form hash
+  useEffect(() => {
+    if (hash === '#inquiry-form') {
+      const timer = setTimeout(() => {
+        // Always target the form panel directly — on mobile the info card
+        // sits above it, so targeting the section top would miss the form.
+        const el = document.getElementById('inquiry-form-panel');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 80);
+      return () => clearTimeout(timer);
+    }
+  }, [hash]);
+
   const handleChange = (/** @type {React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>} */ e) => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
@@ -88,7 +106,7 @@ export default function Contact() {
     }
   };
 
-  const fieldClass = (field) => {
+  const fieldClass = (field = '') => {
     const base =
       'w-full rounded-lg px-4 py-3 text-sm outline-none transition-all duration-200 placeholder:text-slate-400 text-slate-800 bg-slate-50 border';
     return focused === field
@@ -129,7 +147,7 @@ export default function Contact() {
       </section>
 
       {/* ── Contact section ── */}
-      <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
+      <section id="inquiry-form" className="py-20 bg-gradient-to-b from-slate-50 to-white scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-8 items-start">
 
@@ -206,6 +224,7 @@ export default function Contact() {
             </AnimatedSection>
 
             {/* ── Right: form ── */}
+            <div id="inquiry-form-panel" className="lg:col-span-3 scroll-mt-28">
             <AnimatedSection delay={0.15} className="lg:col-span-3">
               <div className="bg-white rounded-2xl shadow-xl shadow-slate-200/80 border border-slate-100 overflow-hidden">
 
@@ -353,6 +372,7 @@ export default function Contact() {
                 </form>
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>
