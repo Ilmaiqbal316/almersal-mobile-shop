@@ -87,6 +87,22 @@
   }
   body {
     @apply bg-background text-foreground font-inter;
+    -webkit-text-size-adjust: 100%;
+  }
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 16px;
   }
 }
 

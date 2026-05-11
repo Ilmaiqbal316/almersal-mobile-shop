@@ -886,7 +886,7 @@ export default function Products() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search..."
-                  className="w-full sm:w-48 lg:w-64 pl-8 sm:pl-10 pr-2 sm:pr-8 py-1.5 sm:py-2.5 rounded-lg text-[11px] sm:text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:border-amber-400/60 focus:ring-2 focus:ring-amber-400/20 transition-all duration-200 shadow-sm"
+                  className="w-full sm:w-48 lg:w-64 pl-8 sm:pl-10 pr-2 sm:pr-8 py-2 sm:py-2.5 rounded-lg text-base sm:text-sm leading-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:border-amber-400/60 focus:ring-2 focus:ring-amber-400/20 transition-all duration-200 shadow-sm"
                 />
                 {searchQuery && (
                   <button
