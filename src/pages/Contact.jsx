@@ -108,7 +108,7 @@ export default function Contact() {
 
   const fieldClass = (field = '') => {
     const base =
-      'w-full rounded-lg px-4 py-3 text-sm outline-none transition-all duration-200 placeholder:text-slate-400 text-slate-800 bg-slate-50 border';
+      'w-full rounded-lg px-4 py-3 text-base sm:text-sm outline-none transition-all duration-200 placeholder:text-slate-400 text-slate-800 bg-slate-50 border';
     return focused === field
       ? `${base} border-amber-400 bg-white shadow-[0_0_0_3px_rgba(251,191,36,0.15)]`
       : `${base} border-slate-200 hover:border-slate-300 hover:bg-white`;

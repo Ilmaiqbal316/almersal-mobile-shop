@@ -720,8 +720,8 @@ export default function Products() {
     pendingScrollRef.current = false;
     const el = productGridRef.current;
     if (!el) return;
-    // Offset for the sticky bar height (~80px header + ~60px sticky bar)
-    const offset = 148;
+    // Offset 
+    const offset = 160;
     const top = el.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: 'smooth' });
   }, [filter]);
