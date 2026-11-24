@@ -51,7 +51,10 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gold mt-1 flex-shrink-0" />
                 <p className="text-gold-light/80 text-sm font-mono">
-                  Property Investment Office 4, Dubai Investment Park First, Office S-200, Dubai - UAE
+                  ALMERSAL ALSAREE ELECTRONIS TRADING L.L.C.<br />
+                  Office No. 101-70, Abdulla Mohamed 149 Building,<br />
+                  Hor Al Anz, Dubai,<br />
+                  United Arab Emirates
                 </p>
               </div>
               <div className="flex items-center gap-3">

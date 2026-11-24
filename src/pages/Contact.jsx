@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Address',
-    value: 'Property Investment Office 4, Dubai Investment Park First, Office S-200, Dubai — UAE',
+    value: 'ALMERSAL ALSAREE ELECTRONIS TRADING L.L.C.\nOffice No. 101-70, Abdulla Mohamed 149 Building,\nHor Al Anz, Dubai,\nUnited Arab Emirates',
     href: null,
   },
   {
@@ -118,7 +118,7 @@ export default function Contact() {
     <div className="pt-20 bg-white min-h-screen">
 
       {/* ── Hero ── */}
-      <section className="relative py-28 sm:py-36 overflow-hidden bg-navy-deep">
+      <section className="relative py-28 sm:py-36 overflow-hidden bg-gradient-to-b from-navy/50 to-navy-deep">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -192,7 +192,7 @@ export default function Contact() {
                               {item.value}
                             </a>
                           ) : (
-                            <p className="text-white/75 text-sm leading-relaxed">{item.value}</p>
+                            <p className="text-white/75 text-sm leading-relaxed whitespace-pre-line">{item.value}</p>
                           )}
                         </div>
                       </motion.div>
@@ -383,13 +383,13 @@ export default function Contact() {
           <AnimatedSection>
             <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.145!2d55.155!3d25.005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAwJzE4LjAiTiA1NcKwMDknMTguMCJF!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                src="https://www.google.com/maps?q=25.2769048,55.336958&z=17&hl=en&output=embed"
                 width="100%"
                 height="380"
                 style={{ border: 0, display: 'block' }}
                 allowFullScreen
                 loading="lazy"
-                title="Office Location — Dubai Investment Park"
+                title="Office Location — Hor Al Anz, Dubai"
               />
             </div>
           </AnimatedSection>

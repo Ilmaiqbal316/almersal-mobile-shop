@@ -40,7 +40,7 @@ export default function About() {
   return (
     <div className="pt-20">
       {/* Hero banner */}
-      <section className="relative py-16 sm:py-24 overflow-hidden">
+      <section className="relative py-16 sm:py-24 overflow-hidden  ">
         <div className="absolute inset-0">
           <img src={DUBAI_IMG} alt="Dubai Skyline" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-b from-navy-deep via-navy-deep/80 to-navy-deep" />
